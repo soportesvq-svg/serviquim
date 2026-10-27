@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Serviquim, C.A. - Especialidades Químicas y Cuidado del Hogar</title>
+    <meta name="description" content="Grupo Serviquim, C.A. - Manufactura y comercialización de productos químicos de limpieza y cuidado del hogar como Blancloro y Limpia Pocetas Ciclón desde 1969.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Content Security Policy (CSP) adaptada para CDNs y recursos externos del sitio -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data: blob:; font-src 'self' https: data:; frame-src 'self' https://www.google.com https://maps.google.com;">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0a2540',      // Azul Oscuro Corporativo
+                            navy: '#0d3b66',      // Azul Marino Principal
+                            lightnavy: '#1e40af', // Azul Vivo
+                            red: '#dc2626',       // Rojo Vibrante
+                            darkred: '#991b1b',   // Rojo Oscuro
+                            brightred: '#ef4444'  // Rojo Acento
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #0a2540 0%, #0d3b66 55%, #991b1b 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .glass-dark {
+            background: rgba(10, 37, 64, 0.88);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .text-gradient-red {
+            background: linear-gradient(135deg, #ef4444 0%, #fca5a5 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .product-image-transition {
+            transition: opacity 0.25s ease-in-out, transform 0.3s ease;
+        }
+        .logo-dark-blue {
+            filter: brightness(0.7) sepia(1) hue-rotate(185deg) saturate(3.5);
+        }
+        /* Estilos gráficos para la Timeline Infográfica */
+        .timeline-connector {
+            background: linear-gradient(180deg, #dc2626 0%, #0d3b66 50%, #2563eb 100%);
+        }
+        .history-card {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .history-card:hover {
+            transform: translateY(-4px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #dc2626;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- BANNER DE NOTIFICACIÓN SUPERIOR -->
+    <div class="bg-gradient-to-r from-brand-blue via-brand-navy to-brand-darkred text-white text-xs sm:text-sm py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-flask text-red-400"></i> Innovación Química Desde 1969</span>
+                <span class="hidden md:inline-block text-slate-400">|</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-amber-400"></i> Calidad e Higiene Garantizada</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#vendedores" class="hover:text-red-300 transition flex items-center gap-1.5 font-bold text-red-300 bg-black/20 px-3 py-1 rounded-full border border-red-500/30">
+                    <i class="fa-solid fa-users-viewfinder"></i> Fuerza de Ventas
+                </a>
+                <a href="tel:+582122854044" class="hidden sm:flex items-center gap-1.5 hover:text-slate-200 transition">
+                    <i class="fa-solid fa-phone"></i> 0212-285.40.44
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVEGADOR PRINCIPAL -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- LOGO ESTRUCTURADO CORPORATIVO -->
+                <a href="#" class="flex items-center space-x-3.5 group" aria-label="Grupo Serviquim - Inicio">
+                    <div class="w-44 h-16 rounded-xl bg-white/0 p-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden shrink-0">
+                        <img src="https://i.postimg.cc/GmmpB5wH/logo.jpg" alt="Logo Grupo Serviquim C.A." class="w-full h-full object-contain mix-blend-multiply contrast-125 filter logo-dark-blue">
+                    </div>
+                </a>
+
+                <!-- Menú Escritorio -->
+                <nav class="hidden xl:flex items-center space-x-7 font-semibold text-sm text-slate-700">
+                    <a href="#inicio" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Inicio</a>
+                    <a href="#quienes-somos" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Quiénes Somos</a>
+                    <a href="#mision-vision" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Misión & Visión</a>
+                    <a href="#historia" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Historia</a>
+                    <a href="#productos" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Productos</a>
+                    <a href="#asociadas" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Empresas & Distribuidores</a>
+                    <a href="#contacto-mapa" class="hover:text-brand-red transition py-1 border-b-2 border-transparent hover:border-brand-red">Contacto</a>
+                </nav>
+
+                <!-- CTA Botón -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#vendedores" class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-darkred text-white font-bold text-sm px-3 py-2.5 rounded-xl shadow-md shadow-red-600/20 hover:shadow-lg transition-all duration-200">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Asesor Comercial
+                    </a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <button id="mobileMenuBtn" type="button" class="xl:hidden p-2.5 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#inicio" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Inicio</a>
+            <a href="#quienes-somos" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Quiénes Somos</a>
+            <a href="#mision-vision" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Misión, Visión & Calidad</a>
+            <a href="#historia" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Historia</a>
+            <a href="#productos" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Productos</a>
+            <a href="#vendedores" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-brand-red bg-red-50"><i class="fa-solid fa-users"></i> Fuerza de Ventas por Región</a>
+            <a href="#asociadas" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Empresas & Distribuidores</a>
+            <a href="#contacto-mapa" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Ubicación y Contacto</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative gradient-hero text-white overflow-hidden py-20 lg:py-28">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="hexagons" width="50" height="43.3" patternUnits="userSpaceOnUse" patternTransform="scale(2)">
+                        <path d="M25 0 L50 14.4 L50 43.3 L25 57.7 L0 43.3 L0 14.4 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#hexagons)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-red/90 text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md">
+                        <span class="w-2.5 h-2.5 rounded-full bg-white animate-pulse"></span> Desde 1969 | Fuerza de Ventas Nacional
+                    </div>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Especialidades Químicas y <span class="text-gradient-red">Cuidado del Hogar</span>
+                    </h1>
+                    <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        En <strong>Grupo Serviquim, C.A.</strong> manufacturamos y comercializamos productos de limpieza y desinfección de la más alta calidad, respaldados por nuestras marcas emblemáticas <strong class="text-white font-bold underline decoration-brand-red">Blancloro</strong> y <strong class="text-white font-bold underline decoration-brand-red">Limpia Pocetas Ciclón</strong>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#vendedores" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-darkred text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-red-600/30 transition-all transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-map-location-dot"></i> Seleccionar Región de Ventas
+                        </a>
+                        <a href="#productos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-xl border border-white/20 transition backdrop-blur-sm">
+                            <i class="fa-solid fa-boxes-stacked"></i> Ver Catálogo
+                        </a>
+                    </div>
+
+                    <!-- Métricas -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/15 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <p class="font-heading text-2xl sm:text-3xl font-extrabold text-red-400">1969</p>
+                            <p class="text-xs text-slate-300">Año de Fundación</p>
+                        </div>
+                        <div>
+                            <p class="font-heading text-2xl sm:text-3xl font-extrabold text-red-400">6 Zonas</p>
+                            <p class="text-xs text-slate-300">Fuerza de Ventas</p>
+                        </div>
+                        <div>
+                            <p class="font-heading text-2xl sm:text-3xl font-extrabold text-red-400">100%</p>
+                            <p class="text-xs text-slate-300">Garantía de Calidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="glass-dark p-3 rounded-3xl shadow-2xl relative border border-white/20">
+                        <div class="relative h-96 rounded-2xl overflow-hidden shadow-inner bg-slate-900 flex flex-col justify-between">
+                            <div class="grid grid-cols-2 h-full gap-2 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-950 border border-slate-700/60 flex items-center justify-center p-3 group/card shadow-inner">
+                                    <img src="https://i.postimg.cc/ydTdb3MM/bclnatural.jpg" 
+                                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80';" 
+                                         alt="Cloro Blancloro Serviquim" 
+                                         class="max-h-full max-w-full object-contain rounded-lg drop-shadow-[0_10px_15px_rgba(0,0,0,0.5)] group-hover/card:scale-110 transition-all duration-500">
+                                    <span class="absolute top-2 left-2 bg-brand-red text-white text-[9px] font-extrabold px-2 py-0.5 rounded shadow-md border border-red-400/30">
+                                        Blancloro
+                                    </span>
+                                </div>
+
+                                <div class="relative rounded-xl overflow-hidden bg-gradient-to-br from-slate-800 to-slate-950 border border-slate-700/60 flex items-center justify-center p-3 group/card shadow-inner">
+                                    <img src="https://i.postimg.cc/HkGgbsKQ/ciclon.jpg" 
+                                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80';" 
+                                         alt="Limpia Pocetas Ciclón Serviquim" 
+                                         class="max-h-full max-w-full object-contain rounded-lg drop-shadow-[0_10px_15px_rgba(0,0,0,0.5)] group-hover/card:scale-110 transition-all duration-500">
+                                    <span class="absolute top-2 left-2 bg-brand-blue text-white text-[9px] font-extrabold px-2 py-0.5 rounded shadow border border-white/20">
+                                        Ciclón
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-blue via-brand-blue/90 to-transparent p-5 pt-12">
+                                <span class="bg-brand-red text-white text-[10px] font-extrabold uppercase px-3 py-1 rounded-full tracking-wider mb-1.5 inline-block shadow">
+                                    Líderes Industriales
+                                </span>
+                                <h3 class="text-lg sm:text-xl font-heading font-bold text-white">Blancloro & Limpia Pocetas Ciclón</h3>
+                                <p class="text-xs text-slate-300 mt-1">Garantizamos disponibilidad inmediata a través de nuestra red de asesores directos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-20 bg-white">
+<section id="trayectoria" class="py-20 bg-blue-50/70 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-red bg-red-50 px-3.5 py-1.5 rounded-full border border-red-200">
+                    Nuestra Empresa
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-blue mt-3">
+                    ¿Quiénes Somos?
+                </h2>
+                <p class="text-slate-600 text-lg mt-4">
+                    Evolucionamos a través del tiempo incursionando en diversas áreas de la química para satisfacer las necesidades presentes y futuras de nuestros clientes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-slate-700 leading-relaxed text-base">
+                        El <strong>Grupo Serviquim, C.A.</strong> ha evolucionado de manera continua. Para alcanzar y mantener un margen competitivo, tenemos como pilar fundamental servir a nuestros clientes con insuperable eficiencia, rigor técnico y atención personalizada.
+                    </p>
+                    <p class="text-slate-700 leading-relaxed text-base">
+                        <strong>Serviquim, C.A.</strong> manufactura y comercializa Especialidades Químicas y productos de Cuidado del Hogar con altos estándares de calidad e innovación.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-brand-red mt-1 text-lg"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-blue text-sm">Calidad Superior</h4>
+                                <p class="text-xs text-slate-500">Estándares en formulación</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-brand-red mt-1 text-lg"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-blue text-sm">Fuerza de Ventas Directa</h4>
+                                <p class="text-xs text-slate-500">Asesoría técnica regional</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-brand-red mt-1 text-lg"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-blue text-sm">Cobertura Nacional</h4>
+                                <p class="text-xs text-slate-500">Distribución oportuna</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+                            <i class="fa-solid fa-circle-check text-brand-red mt-1 text-lg"></i>
+                            <div>
+                                <h4 class="font-bold text-brand-blue text-sm">Mejora Continua</h4>
+                                <p class="text-xs text-slate-500">Investigación y desarrollo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80" alt="Instalaciones de Grupo Serviquim" class="w-full h-80 sm:h-96 object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-brand-navy text-white p-6 rounded-2xl shadow-xl max-w-xs border border-white/20 hidden sm:block">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fa-solid fa-award text-amber-400 text-2xl"></i>
+                            <h4 class="font-bold text-sm">Compromiso Total</h4>
+                        </div>
+                        <p class="text-xs text-slate-300">Formulaciones químicas seguras y eficientes para la industria y los hogares venezolanos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISIÓN, VISIÓN Y POLÍTICA DE CALIDAD -->
+    <section id="mision-vision" class="py-24 bg-gradient-to-b from-slate-900 via-brand-blue to-slate-950 text-white scroll-mt-20 relative overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-brand-lightnavy/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-red-400 bg-brand-red/20 px-4 py-1.5 rounded-full border border-red-500/30 inline-flex items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-compass text-red-400"></i> Filosofía Corporativa
+                </span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight">
+                    Misión, Visión y Calidad
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed font-light">
+                    Los pilares estratégicos y principios éticos que orientan nuestro liderazgo en la industria química nacional.
+                </p>
+            </div>
+
+            <!-- TAB CONTAINER -->
+            <div class="flex justify-center mb-10">
+                <div class="inline-flex p-1.5 bg-slate-800/90 rounded-2xl border border-slate-700/80 shadow-2xl backdrop-blur-md max-w-full overflow-x-auto">
+                    <button type="button" id="tab-btn-mision" onclick="switchPhilosophyTab('mision')" class="philosophy-tab-btn px-5 sm:px-8 py-3 rounded-xl font-heading font-extrabold text-sm transition-all duration-300 flex items-center gap-2.5 bg-gradient-to-r from-brand-red to-brand-darkred text-white shadow-lg shadow-red-600/30">
+                        <i class="fa-solid fa-bullseye text-base"></i> Misión
+                    </button>
+                    <button type="button" id="tab-btn-vision" onclick="switchPhilosophyTab('vision')" class="philosophy-tab-btn px-5 sm:px-8 py-3 rounded-xl font-heading font-extrabold text-sm transition-all duration-300 flex items-center gap-2.5 text-slate-300 hover:text-white hover:bg-slate-700/50">
+                        <i class="fa-solid fa-eye text-base"></i> Visión
+                    </button>
+                    <button type="button" id="tab-btn-calidad" onclick="switchPhilosophyTab('calidad')" class="philosophy-tab-btn px-5 sm:px-8 py-3 rounded-xl font-heading font-extrabold text-sm transition-all duration-300 flex items-center gap-2.5 text-slate-300 hover:text-white hover:bg-slate-700/50">
+                        <i class="fa-solid fa-award text-base"></i> Política de Calidad
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <!-- PESTAÑA MISIÓN -->
+                <div id="tab-content-mision" class="philosophy-content-block transition-all duration-500">
+                    <div class="glass-dark rounded-[2.5rem] p-8 sm:p-12 border border-slate-700/80 shadow-2xl relative overflow-hidden group">
+                        <div class="absolute -right-10 -bottom-10 opacity-5 text-white pointer-events-none">
+                            <i class="fa-solid fa-bullseye text-[18rem]"></i>
+                        </div>
+                        <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+                            <div class="lg:col-span-8 space-y-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/80 px-3.5 py-1.5 rounded-full border border-red-500/30 inline-flex items-center gap-1.5">
+                                    <i class="fa-solid fa-flag"></i> Nuestro Propósito Fundacional
+                                </span>
+                                <h3 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+                                    Compromiso de Excelencia Diaria
+                                </h3>
+                                <p class="text-slate-200 text-base sm:text-lg leading-relaxed font-light">
+                                    Proporcionarle a nuestros clientes productos y servicios que satisfagan o excedan sus necesidades y expectativas, mediante el mejoramiento continuo de nuestros recursos, proveyendo a nuestros empleados un ambiente de trabajo que les permita desarrollar a cabalidad su creatividad desde la perspectiva profesional y personal, mientras generamos las ganancias que permiten nuestra existencia y crecimiento.
+                                </p>
+                            </div>
+                            <div class="lg:col-span-4 flex justify-center">
+                                <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl bg-gradient-to-br from-brand-red to-brand-darkred p-1 shadow-2xl flex items-center justify-center relative group-hover:scale-105 transition-transform duration-300">
+                                    <div class="w-full h-full bg-slate-950/90 rounded-[22px] flex flex-col items-center justify-center text-center p-6 space-y-3">
+                                        <i class="fa-solid fa-bullseye text-5xl text-red-400"></i>
+                                        <span class="font-heading font-extrabold text-xl text-white">MISIÓN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PESTAÑA VISIÓN -->
+                <div id="tab-content-vision" class="philosophy-content-block hidden transition-all duration-500">
+                    <div class="glass-dark rounded-[2.5rem] p-8 sm:p-12 border border-slate-700/80 shadow-2xl relative overflow-hidden group">
+                        <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+                            <div class="lg:col-span-8 space-y-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-950/80 px-3.5 py-1.5 rounded-full border border-blue-500/30 inline-flex items-center gap-1.5">
+                                    <i class="fa-solid fa-globe"></i> Proyección e Impacto
+                                </span>
+                                <h3 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+                                    Liderazgo Sostenible en el Mercado
+                                </h3>
+                                <p class="text-slate-200 text-base sm:text-lg leading-relaxed font-light">
+                                    Alcanzar el liderazgo en todos los segmentos del mercado de productos químicos en los cuales participemos, a través de la satisfacción total de la necesidad de nuestros clientes y consumidores, tanto nacionales como internacionales, generando de esta manera bienestar para nuestro negocio, nuestros colaboradores, nuestros accionistas y en general para las comunidades en las cuales nos desenvolvemos.
+                                </p>
+                            </div>
+                            <div class="lg:col-span-4 flex justify-center">
+                                <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl bg-gradient-to-br from-brand-navy to-brand-lightnavy p-1 shadow-2xl flex items-center justify-center relative">
+                                    <div class="w-full h-full bg-slate-950/90 rounded-[22px] flex flex-col items-center justify-center text-center p-6 space-y-3">
+                                        <i class="fa-solid fa-eye text-5xl text-blue-400"></i>
+                                        <span class="font-heading font-extrabold text-xl text-white">VISIÓN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PESTAÑA CALIDAD -->
+                <div id="tab-content-calidad" class="philosophy-content-block hidden transition-all duration-500">
+                    <div class="glass-dark rounded-[2.5rem] p-8 sm:p-10 border border-slate-700/80 shadow-2xl">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700/80">
+                                <div class="w-12 h-12 rounded-xl bg-brand-red/20 text-brand-red flex items-center justify-center font-extrabold text-xl mb-4">01</div>
+                                <h4 class="font-heading font-bold text-lg text-white mb-2">Exceder Expectativas</h4>
+                                <p class="text-slate-300 text-xs sm:text-sm">Elaboramos productos de alta calidad para superar las metas de nuestros clientes.</p>
+                            </div>
+                            <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700/80">
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center font-extrabold text-xl mb-4">02</div>
+                                <h4 class="font-heading font-bold text-lg text-white mb-2">Capital Creativo</h4>
+                                <p class="text-slate-300 text-xs sm:text-sm">Aprovechamos la creatividad y experiencia de nuestro talento humano.</p>
+                            </div>
+                            <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700/80">
+                                <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-extrabold text-xl mb-4">03</div>
+                                <h4 class="font-heading font-bold text-lg text-white mb-2">Compromiso Gerencial</h4>
+                                <p class="text-slate-300 text-xs sm:text-sm">Recursos garantizados para mantener estándares internacionales de higiene.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORIA INFOGRÁFICA INTERACTIVA MEJORADA -->
+    <section id="historia" class="py-20 bg-slate-100 border-y border-slate-200">
+        <!-- Luces ambientales de fondo -->
+         <div class="absolute top-1/4 left-10 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Encabezado de la Sección -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-red-400 bg-red-950/80 px-4 py-1.5 rounded-full border border-red-500/30 inline-flex items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-timeline text-red-400"></i> Línea de Tiempo Interactiva
+                </span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-Black mt-4 tracking-tight">
+                    Nuestra Trayectoria Histórica
+                </h2>
+                <p class="text-slate-600 text-lg mt-3">
+                    Más de 50 años de evolución constante en la industria química venezolana. Haz clic en los hitos para visualizar cada etapa.
+                </p>
+                
+            </div>
+
+            <!-- VISOR GRÁFICO DESTACADO DEL HITO SELECCIONADO (HERO TIMELINE DISPLAY) -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="bg-slate-900/90 backdrop-blur-xl rounded-[2.5rem] p-6 sm:p-10 border border-slate-700/80 shadow-[0_25px_60px_-15px_rgba(245,245,220,0.5)] relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 opacity-5 text-white pointer-events-none">
+                        <i id="timeline-hero-icon-bg" class="fa-solid fa-flag text-[16rem]"></i>
+                    </div>
+
+                    <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+                        <div class="lg:col-span-8 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span id="timeline-hero-badge" class="font-mono text-xs sm:text-sm font-extrabold text-white bg-brand-red px-4 py-1.5 rounded-full shadow-lg border border-red-400/40">
+                                    Noviembre 1969
+                                </span>
+                                <span class="text-slate-400 text-xs font-bold uppercase tracking-widest flex items-center gap-1">
+                                    <i class="fa-solid fa-bullseye text-red-400"></i> Hito Fundacional
+                                </span>
+                            </div>
+
+                            <h3 id="timeline-hero-title" class="font-heading font-extrabold text-2xl sm:text-4xl text-white tracking-tight">
+                                Inicio de Actividades Químicas
+                            </h3>
+
+                            <p id="timeline-hero-desc" class="text-slate-200 text-sm sm:text-base leading-relaxed font-light">
+                                Comenzamos operaciones con la fabricación y venta de auxiliares químicos para la industria, especializándonos en detergentes enzimáticos e innovaciones para procesos industriales.
+                            </p>
+
+                            <div id="timeline-hero-tags" class="flex flex-wrap gap-2 pt-2">
+                                <span class="text-[11px] font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-lg border border-slate-700">Detergentes Enzimáticos</span>
+                                <span class="text-[11px] font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-lg border border-slate-700">Auxiliares Industriales</span>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-4 flex flex-col items-center justify-center border-t lg:border-t-0 lg:border-l border-slate-800 pt-6 lg:pt-0 lg:pl-8">
+                            <div id="timeline-hero-icon-box" class="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-br from-brand-red to-brand-darkred flex items-center justify-center text-white text-4xl shadow-2xl border border-red-400/30 group-hover:scale-105 transition-transform duration-300">
+                                <i id="timeline-hero-icon" class="fa-solid fa-flag"></i>
+                            </div>
+                            <span id="timeline-hero-year-big" class="font-heading font-black text-3xl sm:text-4xl text-white/90 mt-3 font-mono">
+                                1969
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVEGADOR Y GRÁFICO DE HITOS (TIMELINE FLOW INTERACTIVO) -->
+            <div class="max-w-6xl mx-auto">
+                <div class="relative">
+                    
+                    <!-- Línea Conectora Gradiente Visual (Visible en MD+) -->
+                    
+                    <!-- Grilla de Tarjetas e Nodos de la Línea del Tiempo -->
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10">
+                        
+                        <!-- Hito 1: 1969 -->
+                        <button type="button" onclick="selectTimelineItem(0)" id="timeline-btn-0" class="history-card text-left p-5 rounded-3xl bg-slate-900/90 border-2 border-brand-red text-white shadow-xl transition-all duration-300 relative group cursor-pointer focus:outline-none">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="font-mono text-xs font-bold text-red-400 bg-red-950/80 px-2.5 py-0.5 rounded-md border border-red-500/30">1969</span>
+                                <div class="w-8 h-8 rounded-xl bg-brand-red text-white flex items-center justify-center text-xs shadow-md">
+                                    <i class="fa-solid fa-flag"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-heading font-bold text-sm text-white group-hover:text-red-300 transition">Fundación</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">Auxiliares químicos e inicio industrial.</p>
+                        </button>
+
+                        <!-- Hito 2: 1971 -->
+                        <button type="button" onclick="selectTimelineItem(1)" id="timeline-btn-1" class="history-card text-left p-5 rounded-3xl bg-slate-900/90 border border-slate-700/80 text-slate-300 shadow-lg hover:border-slate-500 transition-all duration-300 relative group cursor-pointer focus:outline-none">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="font-mono text-xs font-bold text-blue-400 bg-blue-950/80 px-2.5 py-0.5 rounded-md border border-blue-500/30">1971</span>
+                                <div class="w-8 h-8 rounded-xl bg-slate-800 text-blue-400 flex items-center justify-center text-xs shadow-md group-hover:bg-brand-navy group-hover:text-white transition">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-heading font-bold text-sm text-white group-hover:text-blue-300 transition">Materias Primas</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">Síntesis propia y ventaja competitiva.</p>
+                        </button>
+
+                        <!-- Hito 3: 1974 -->
+                        <button type="button" onclick="selectTimelineItem(2)" id="timeline-btn-2" class="history-card text-left p-5 rounded-3xl bg-slate-900/90 border border-slate-700/80 text-slate-300 shadow-lg hover:border-slate-500 transition-all duration-300 relative group cursor-pointer focus:outline-none">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="font-mono text-xs font-bold text-amber-400 bg-amber-950/80 px-2.5 py-0.5 rounded-md border border-amber-500/30">1974</span>
+                                <div class="w-8 h-8 rounded-xl bg-slate-800 text-amber-400 flex items-center justify-center text-xs shadow-md group-hover:bg-amber-600 group-hover:text-white transition">
+                                    <i class="fa-solid fa-soap"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-heading font-bold text-sm text-white group-hover:text-amber-300 transition">Consumo Masivo</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">Lanzamiento lavaplatos Primor.</p>
+                        </button>
+
+                        <!-- Hito 4: 1983 -->
+                        <button type="button" onclick="selectTimelineItem(3)" id="timeline-btn-3" class="history-card text-left p-5 rounded-3xl bg-slate-900/90 border border-slate-700/80 text-slate-300 shadow-lg hover:border-slate-500 transition-all duration-300 relative group cursor-pointer focus:outline-none">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-md border border-emerald-500/30">1983</span>
+                                <div class="w-8 h-8 rounded-xl bg-slate-800 text-emerald-400 flex items-center justify-center text-xs shadow-md group-hover:bg-emerald-600 group-hover:text-white transition">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-heading font-bold text-sm text-white group-hover:text-emerald-300 transition">Era Blancloro</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">Cloro de pH controlado pionero.</p>
+                        </button>
+
+                        <!-- Hito 5: 1988+ -->
+                        <button type="button" onclick="selectTimelineItem(4)" id="timeline-btn-4" class="history-card text-left p-5 rounded-3xl bg-slate-900/90 border border-slate-700/80 text-slate-300 shadow-lg hover:border-slate-500 transition-all duration-300 relative group cursor-pointer focus:outline-none">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="font-mono text-xs font-bold text-purple-400 bg-purple-950/80 px-2.5 py-0.5 rounded-md border border-purple-500/30">Hoy</span>
+                                <div class="w-8 h-8 rounded-xl bg-slate-800 text-purple-400 flex items-center justify-center text-xs shadow-md group-hover:bg-purple-600 group-hover:text-white transition">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-heading font-bold text-sm text-white group-hover:text-purple-300 transition">Red Nacional</h4>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">Liderazgo y fuerza comercial.</p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumen Estadístico de Historia -->
+            <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto pt-10 border-t border-slate-800">
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 text-center">
+                    <span class="font-heading text-2xl sm:text-3xl font-extrabold text-red-400 block font-mono">+55 Años</span>
+                    <span class="text-xs text-slate-400">Trayectoria Ininterrumpida</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 text-center">
+                    <span class="font-heading text-2xl sm:text-3xl font-extrabold text-blue-400 block font-mono">100%</span>
+                    <span class="text-xs text-slate-400">Manufactura Nacional</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 text-center">
+                    <span class="font-heading text-2xl sm:text-3xl font-extrabold text-amber-400 block font-mono">2 Marcas</span>
+                    <span class="text-xs text-slate-400">Líderes de Mercado</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800 text-center">
+                    <span class="font-heading text-2xl sm:text-3xl font-extrabold text-emerald-400 block font-mono">6 Zonas</span>
+                    <span class="text-xs text-slate-400">Cobertura Directa</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="py-20 bg-brand-blue text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-red-300 bg-brand-red px-3.5 py-1.5 rounded-full shadow">
+                    Catálogo Oficial
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-3">
+                    Nuestras Marcas Emblemáticas
+                </h2>
+                <p class="text-slate-300 text-lg mt-4">
+                    Explora nuestras líneas principales con especificaciones técnicas y atención comercial directa.
+                </p>
+            </div>
+            <!-- LEFT COLUMN: Product Selector List (Col 1-5) -->
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- LEFT COLUMN: Product Selector List (Col 1-5) -->
+            <div class="lg:col-span-5 space-y-4">
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800/80">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group text-red-500"></i>
+                        <h2 class="text-sm font-bold uppercase tracking-wider text-slate-300">Seleccionar Producto</h2>
+                    </div>
+                    <span class="text-[11px] bg-slate-800/80 text-slate-400 px-2.5 py-0.5 rounded-full font-mono border border-slate-700/50">2 Productos</span>
+                </div>
+
+                <div class="space-y-3 custom-scrollbar max-h-[calc(100vh-220px)] overflow-y-auto pr-1">
+                    
+                    <!-- Product Option 1 Card: BLANCLORO -->
+                    <div id="selector-blancloro" class="product-card-selector cursor-pointer bg-slate-900/90 hover:bg-slate-850 border-2 border-red-500 rounded-2xl p-4 transition-all duration-300 shadow-glow-card relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-red-500/10 to-transparent opacity-100 group-hover:opacity-100 transition duration-300 pointer-events-none"></div>
+                        <div class="flex flex-col gap-3 relative z-10">
+                            <div class="flex items-center gap-4" onclick="selectProduct('blancloro')">
+                                <!-- Uniform Square Diameter Thumbnail Container -->
+                                <div class="w-20 h-20 bg-slate-950 rounded-xl overflow-hidden flex-shrink-0 flex items-center justify-center p-2 border border-slate-800 group-hover:border-red-500/50 transition">
+                                    <div class="w-full h-full flex items-center justify-center relative">
+                                        <img id="thumb-blancloro-img" src="https://i.postimg.cc/qvgvTf6p/Blc.jpg" alt="Blancloro" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" style="image-rendering:-webkit-optimize-contrast;">
+                                    </div>
+                                </div>
+                                <div class="flex-grow min-w-0">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-[10px] uppercase font-black px-2 py-0.5 rounded bg-red-500/20 text-red-400 border border-red-500/30">Cloro Líquido</span>
+                                        <span class="text-[10px] font-mono text-slate-400">1 L</span>
+                                    </div>
+                                    <h3 class="font-black text-white text-base group-hover:text-red-400 transition truncate">CLORO BLANCLORO</h3>
+                                    <p class="text-xs text-slate-400 line-clamp-1 mt-0.5">Fórmula con pH controlado para protección textil.</p>
+                                </div>
+                                <div class="text-red-500 text-base font-bold pr-1 flex-shrink-0">
+                                    <div class="w-8 h-8 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center group-hover:bg-red-500 group-hover:text-white transition">
+                                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DESPLEGABLE DE FRAGANCIA PARA BLANCLORO -->
+                            <div class="pt-2 border-t border-slate-800/80 flex items-center gap-2">
+                                <label for="dropdown-blancloro-list" class="text-xs font-bold text-slate-400 flex items-center gap-1.5 flex-shrink-0">
+                                    <i class="fa-solid fa-droplet text-red-400"></i> Fragancia:
+                                </label>
+                                <select id="dropdown-blancloro-list" onchange="onBlancloroDropdownChange(this.value)" class="w-full bg-slate-950 text-white text-xs font-semibold rounded-xl border border-slate-700/80 p-2 focus:outline-none focus:border-red-500 transition cursor-pointer">
+                                    <option value="Natural|https://i.postimg.cc/qvgvTf6p/Blc.jpg">Natural</option>
+                                    <option value="Cítrico|https://i.postimg.cc/HL14H9Zy/bclcitrico.jpg">Cítrico</option>
+                                    <option value="Floral|https://i.postimg.cc/Y0Wpw4VX/bclfloral.jpg">Floral</option>
+                                    <option value="Montaña|https://i.postimg.cc/brB2m2bj/bclmontana.jpg">Montaña</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Product Option 2 Card: LIMPIA POCETAS CICLÓN -->
+                    <div id="selector-ciclon" class="product-card-selector cursor-pointer bg-slate-900/60 hover:bg-slate-850 border-2 border-slate-800/80 hover:border-slate-700 rounded-2xl p-4 transition-all duration-300 shadow-lg relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-sky-500/0 to-transparent group-hover:from-sky-500/5 transition duration-300 pointer-events-none"></div>
+                        <div class="flex flex-col gap-3 relative z-10">
+                            <div class="flex items-center gap-4" onclick="selectProduct('ciclon')">
+                                <!-- Uniform Square Diameter Thumbnail Container -->
+                                <div class="w-20 h-20 bg-slate-950 rounded-xl overflow-hidden flex-shrink-0 flex items-center justify-center p-2 border border-slate-800 group-hover:border-sky-500/50 transition">
+                                    <div class="w-full h-full flex items-center justify-center relative">
+                                        <img src="https://i.postimg.cc/fRmJdbzy/Ciclon.jpg" alt="Limpia Pocetas Ciclón" class="max-h-full max-w-full object-contain group-hover:scale-110 transition duration-300" style="image-rendering:-webkit-optimize-contrast;">
+                                    </div>
+                                </div>
+                                <div class="flex-grow min-w-0">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-[10px] uppercase font-black px-2 py-0.5 rounded bg-sky-500/20 text-sky-400 border border-sky-500/30">Desinfectante</span>
+                                        <span class="text-[10px] font-mono text-slate-400">1 L</span>
+                                    </div>
+                                    <h3 class="font-black text-white text-base group-hover:text-sky-400 transition truncate">LIMPIA POCETAS CICLÓN</h3>
+                                    <p class="text-xs text-slate-400 line-clamp-1 mt-0.5">Elimina sarro y bacterias con fragancia intensa.</p>
+                                </div>
+                                <div class="text-slate-500 text-base font-bold pr-1 flex-shrink-0">
+                                    <div class="w-8 h-8 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-sky-500 group-hover:border-sky-400 group-hover:text-white transition">
+                                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- DESPLEGABLE DE FRAGANCIA PARA CICLÓN -->
+                            <div class="pt-2 border-t border-slate-800/80 flex items-center gap-2">
+                                <label for="dropdown-ciclon-list" class="text-xs font-bold text-slate-400 flex items-center gap-1.5 flex-shrink-0">
+                                    <i class="fa-solid fa-snowflake text-sky-400"></i> Fragancia:
+                                </label>
+                                <select id="dropdown-ciclon-list" onchange="onCiclonDropdownChange(this.value)" class="w-full bg-slate-950 text-white text-xs font-semibold rounded-xl border border-slate-700/80 p-2 focus:outline-none focus:border-sky-500 transition cursor-pointer">
+                                    <option value="Winter Fresh">Winter Fresh (Frescura Antisarro)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Info Help Box -->
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/80 text-slate-400 text-xs flex items-start gap-3">
+                    <i class="fa-solid fa-lightbulb text-amber-400 text-base flex-shrink-0 mt-0.5"></i>
+                    <p class="leading-relaxed">Haz clic en cualquiera de las opciones para actualizar automáticamente el panel de especificaciones y fragancias.</p>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Detailed Product View (Col 6-12) -->
+            <div class="lg:col-span-7">
+                <div class="sticky top-24">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 mb-4">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-info text-red-500"></i>
+                            <h2 class="text-sm font-bold uppercase tracking-wider text-slate-300">Especificaciones y Fragancias</h2>
+                        </div>
+                        <span id="active-product-tag" class="text-xs bg-red-500/10 text-red-400 font-mono px-3 py-1 rounded-full border border-red-500/20 flex items-center gap-1.5">
+                            <span class="w-1 h-1 rounded-full bg-red-500"></span>
+                            Visualizando
+                        </span>
+                    </div>
+
+                    <!-- CONTAINER FOR PRODUCT 1: BLANCLORO -->
+                    <div id="detail-blancloro" class="product-detail-panel bg-slate-900/90 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300">
+                        <div class="grid md:grid-cols-12 min-h-[520px]">
+                            
+                            <!-- Product Large Uniform Image Viewer Container (Amplia visibilidad sin pixelación) -->
+                            <div class="md:col-span-6 h-96 sm:h-[480px] md:h-full overflow-hidden relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 flex flex-col items-center justify-center p-2 border-b md:border-b-0 md:border-r border-slate-800/80 group">
+                                <div class="absolute inset-0 bg-gradient-to-br from-red-600/15 via-transparent to-transparent opacity-60"></div>
+                                
+                                <!-- High Quality Full-Bleed Container Wrapper -->
+                                <div class="w-full h-full min-h-[380px] md:min-h-[500px] flex items-center justify-center relative z-10 p-2">
+                                    <img id="product-blancloro-img" 
+                                         src="https://i.postimg.cc/qvgvTf6p/Blc.jpg" 
+                                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=1200&q=90';" 
+                                         alt="Cloro Blancloro Serviquim" 
+                                         class="w-full h-full object-contain filter drop-shadow-[0_25px_35px_rgba(0,0,0,0.85)] product-image-transition group-hover:scale-105"
+                                         style="image-rendering:-webkit-optimize-contrast;">
+                                </div>
+                                
+                                <span id="blancloro-badge" class="absolute top-4 left-4 z-20 bg-red-600/90 backdrop-blur-md text-white text-[10px] font-black uppercase px-3 py-1 rounded-lg shadow-lg border border-red-400/30 tracking-wider">
+                                    Blancloro - Natural
+                                </span>
+                            </div>
+
+                            <!-- Product Information Details -->
+                            <div class="md:col-span-6 p-7 sm:p-7 flex flex-col justify-between space-y-6">
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-xs font-mono text-slate-400">SERVIQUIM &bull; Línea Hogar e Industria</span>
+                                        </div>
+                                        <h3 class="text-2xl font-black text-white tracking-tight">CLORO BLANCLORO</h3>
+                                    </div>
+
+                                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed bg-slate-950/50 p-3.5 rounded-xl border border-slate-800/60">
+                                        BLANCLORO garantiza una máxima blancura y protección a su ropa en todo momento, sin que se dañe o pierda sus propiedades, gracias a su <strong class="text-red-400 font-semibold">pH controlado</strong>.
+                                    </p>
+
+                                    <!-- Presentations -->
+                                    <div class="pt-1">
+                                        <span class="text-xs font-bold text-slate-400 block mb-1.5 uppercase tracking-wider">Presentación Disponible:</span>
+                                        <div class="inline-flex items-center gap-2 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+                                            <i class="fa-solid fa-bottle-water text-slate-400 text-xs"></i>
+                                            <span class="text-xs font-mono text-slate-200 font-bold">1 Litro (Botella Pet)</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER FOR PRODUCT 2: LIMPIA POCETAS CICLÓN -->
+                    <div id="detail-ciclon" class="product-detail-panel bg-slate-900/90 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 hidden">
+                        <div class="grid md:grid-cols-12 min-h-[520px]">
+                            
+                            <!-- Product Large Uniform Image Viewer Container (Amplia visibilidad sin pixelación) -->
+                            <div class="md:col-span-6 h-96 sm:h-[480px] md:h-full overflow-hidden relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 flex flex-col items-center justify-center p-2 border-b md:border-b-0 md:border-r border-slate-800/80 group">
+                                <div class="absolute inset-0 bg-gradient-to-br from-sky-600/15 via-transparent to-transparent opacity-60"></div>
+                                
+                                <!-- High Quality Full-Bleed Container Wrapper -->
+                                <div class="w-full h-full min-h-[380px] md:min-h-[500px] flex items-center justify-center relative z-10 p-2">
+                                    <img src="https://i.postimg.cc/fRmJdbzy/Ciclon.jpg" 
+                                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=90';" 
+                                         alt="Limpia Pocetas Ciclón Serviquim" 
+                                         class="w-full h-full object-contain filter drop-shadow-[0_25px_35px_rgba(0,0,0,0.85)] product-image-transition group-hover:scale-105"
+                                         style="image-rendering:-webkit-optimize-contrast;">
+                                </div>
+                                
+                                <span class="absolute top-4 left-4 z-20 bg-sky-600/90 backdrop-blur-md text-white text-[10px] font-black uppercase px-3 py-1 rounded-lg shadow-lg border border-sky-400/30 tracking-wider">
+                                    Desinfección Profunda
+                                </span>
+                            </div>
+
+                            <!-- Product Information Details -->
+                            <div class="md:col-span-6 p-6 sm:p-7 flex flex-col justify-between space-y-6">
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-xs font-mono text-slate-400">SERVIQUIM &bull; Línea Desinfección</span>
+                                        </div>
+                                        <h3 class="text-2xl font-black text-white tracking-tight">LIMPIA POCETAS CICLÓN</h3>
+                                    </div>
+
+                                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed bg-slate-950/50 p-3.5 rounded-xl border border-slate-800/60">
+                                        Potente limpiador y desinfectante especialmente formulado para sanitarios y baños, garantizando eliminación de sarro, desinfección profunda e higiene total.
+                                    </p>
+
+                                    
+
+                                    <!-- Presentations -->
+                                    <div class="pt-1">
+                                        <span class="text-xs font-bold text-slate-400 block mb-1.5 uppercase tracking-wider">Presentación Disponible:</span>
+                                        <div class="inline-flex items-center gap-2 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800">
+                                            <i class="fa-solid fa-bottle-water text-slate-400 text-xs"></i>
+                                            <span class="text-xs font-mono text-slate-200 font-bold">1 Litro</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FUERZA DE VENTAS POR REGIÓN -->
+    <section id="vendedores" class="relative gradient-hero text-white overflow-hidden py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-red-400 bg-brand-red/20 px-4 py-1.5 rounded-full border border-red-500/30 inline-flex items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-network-wired text-red-400 animate-pulse"></i> Red Comercial Nacional
+                </span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight">
+                    Fuerza de Ventas y Asesores Regionales
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed font-light">
+                    Seleccione su región geográfica en las tarjetas interactivas para conectar de forma directa e inmediata con su ejecutivo asignado.
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-5 space-y-3">
+                    <div class="flex items-center justify-between pb-2 px-1">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                            <i class="fa-solid fa-map-location-dot text-red-400"></i> Seleccione su Estado o Zona:
+                        </span>
+                        <span class="text-[11px] font-mono text-brand-red bg-red-950/60 px-2.5 py-0.5 rounded-full border border-red-500/30">6 Zonas Activas</span>
+                    </div>
+
+                    <div id="interactive-region-list" class="space-y-2.5 max-h-[580px] overflow-y-auto pr-1 custom-scrollbar">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-gradient-to-br from-slate-900/95 via-slate-950/95 to-slate-900/95 backdrop-blur-2xl rounded-[2.5rem] p-6 sm:p-10 border border-slate-700/80 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] relative overflow-hidden group">
+                        
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+                            <div class="flex items-center gap-3">
+                                <div id="active-seller-initials" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-brand-red to-brand-darkred text-white font-heading font-extrabold text-2xl sm:text-3xl flex items-center justify-center shadow-xl border border-red-500/40 shrink-0">
+                                    AN
+                                </div>
+                                <div>
+                                    <span id="active-seller-region" class="text-xs font-extrabold uppercase tracking-wider text-red-400 bg-red-950/80 px-3.5 py-1 rounded-full border border-red-500/30 inline-block mb-1.5 shadow-sm">
+                                        Caracas
+                                    </span>
+                                    <h3 id="active-seller-name" class="font-heading font-extrabold text-2xl sm:text-3xl text-white tracking-tight">
+                                        Abelardo Novoa
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 px-3.5 py-1.5 rounded-full text-emerald-400 text-xs font-bold">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Asesor Activo
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400 block mb-1">Cargo y Alcance Corporativo:</span>
+                                <p id="active-seller-title" class="text-base sm:text-lg font-bold text-slate-100">
+                                    Asesor Comercial - Caracas
+                                </p>
+                            </div>
+
+                            <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800/80 shadow-inner">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-red-400 block mb-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-info"></i> Detalle de Cobertura Comercial:
+                                </span>
+                                <p id="active-seller-desc" class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                    Asesoramiento directo a distribuidores y comercios en la ciudad de Caracas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-slate-800">
+                            <a id="active-seller-phone-btn" href="tel:+584141253033" class="flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-750 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-200 border border-slate-700/80 shadow-lg group/btn hover:border-slate-500">
+                                <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-emerald-400">
+                                    <i class="fa-solid fa-phone text-lg"></i>
+                                </div>
+                                <div class="text-left">
+                                    <span class="text-[10px] uppercase text-slate-400 block font-semibold">Llamar Directo</span>
+                                    <span id="active-seller-phone-text" class="text-sm font-mono tracking-tight">+58 (414) 125-3033</span>
+                                </div>
+                            </a>
+
+                            <a id="active-seller-whatsapp-btn" href="https://wa.me/584141253033" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-200 shadow-xl shadow-emerald-600/30 group/btn">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-800/60 flex items-center justify-center text-white">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                </div>
+                                <div class="text-left">
+                                    <span class="text-[10px] uppercase text-emerald-200 block font-semibold">Chat en Vivo</span>
+                                    <span class="text-sm tracking-tight">Escribir por WhatsApp</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMPRESAS ASOCIADAS Y PRINCIPALES DISTRIBUIDORES -->
+    <section id="asociadas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-blue bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
+                            Estructura Corporativa
+                        </span>
+                        <h2 class="font-heading text-3xl font-extrabold text-brand-blue mt-3">
+                            Empresas Asociadas
+                        </h2>
+                        <p class="text-slate-600 text-sm mt-2">
+                            Entidades filiales y estratégicas que fortalecen nuestra presencia industrial y comercial.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex items-center space-x-4 shadow-sm hover:border-brand-red transition group">
+                            <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200 flex items-center justify-center p-1.5 shrink-0 overflow-hidden group-hover:scale-105 transition-transform">
+                               <img src="https://i.postimg.cc/DZ7VVfDH/LOGO-IK-CON-RIF.jpg" alt="Logo Industria Kelko">
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-slate-900 text-lg">Industria Kelko</h3>
+                                <p class="text-xs text-slate-500">Filial Especializada del Grupo Serviquim</p>
+                            </div>
+                        </div>
+
+                        <a href="https://kelkoquakerlatam.com/" target="_blank" rel="noopener noreferrer" class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex items-center space-x-4 shadow-sm hover:border-brand-red hover:shadow-md transition group block cursor-pointer">
+                            <div class="w-14 h-14 rounded-2xl bg-white border border-slate-200 flex items-center justify-center p-1.5 shrink-0 overflow-hidden group-hover:scale-105 transition-transform">
+                                <img src="https://i.postimg.cc/43q5YNsn/kq.jpg" alt="Kelko Quaker LATAM" class="w-full h-full object-contain rounded-xl">
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-heading font-bold text-slate-900 text-lg group-hover:text-brand-red transition">Kelko Quaker</h3>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-brand-red transition"></i>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-0.5">Empresa Asociada de Manufactura y Distribución</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-slate-900 text-white rounded-3xl p-4 lg:p-10 shadow-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-6 border-b border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs font-extrabold uppercase tracking-widest text-red-400">Canales de Comercialización</span>
+                            <h3 class="font-heading text-2xl font-extrabold text-white mt-1">Nuestros Principales Distribuidores</h3>
+                        </div>
+                        <i class="fa-solid fa-truck-ramp-box text-3xl text-brand-red"></i>
+                    </div>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                        Nuestras marcas <strong>Blancloro</strong> y <strong>Limpia Pocetas Ciclón</strong> abastecen de forma constante a las principales cadenas e industrias del país.
+                    </p>
+                    
+                   <!-- SUPER MERCADOS -->
+                    <div class="space-y-3 bg-slate-800/90 p-3 rounded-2xl border border-slate-700/80 mb-4">
+                        <label for="supermercadosSelect" class="block font-heading font-bold text-sm text-red-300 flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping text-red-400"></i> Cadenas de Supermercados:
+                        </label>
+                        <div class="relative">
+                            <select id="supermercadosSelect" class="w-full appearance-none bg-slate-900 border border-slate-600 text-slate-20 text-sm rounded-xl px-4 py-3.5 pr-10 focus:outline-none focus:ring-2 focus:ring-brand-red transition cursor-pointer">
+                                <option value="" disabled selected>Seleccione una cadena de supermercados...</option>
+                                <option value="Rio Supermarket">Rio Supermarket</option>
+                                <option value="Luvebras">Luvebras</option>
+                                <option value="Plan Suárez">Plan Suárez</option>
+                                <option value="Forum Mayorista">Forum Mayorista</option>
+                                <option value="Central Madeirense">Central Madeirense</option>
+                                <option value="Automercados Luz">Automercados Luz</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MAYORISTAS Y DISTRIBUIDORES -->
+                    <div class="space-y-3 bg-slate-800/90 p-3 rounded-2xl border border-slate-700/80 mb-4">
+                        <label for="mayoristasSelect" class="block font-heading font-bold text-sm text-red-300 flex items-center gap-2">
+                            <i class="fa-solid fa-boxes-packing text-red-400"></i> Mayoristas & Distribuidores:
+                        </label>
+                        <div class="relative">
+                            <select id="mayoristasSelect" class="w-full appearance-none bg-slate-900 border border-slate-600 text-slate-200 text-sm rounded-xl px-4 py-3.5 pr-10 focus:outline-none focus:ring-2 focus:ring-brand-red transition cursor-pointer">
+                                <option value="" disabled selected>Seleccione un distribuidor mayorista...</option>
+                                <option value="Oriente Distribución, C.A.">Oriente Distribución, C.A.</option>
+                                <option value="Productos y Suministros PM, C.A">Productos y Suministros PM, C.A</option>
+                                <option value="Productos Milano, C.A.">Productos Milano, C.A.</option>
+                                <option value="Distribuidora Belher 100, C.A.">Distribuidora Belher 100, C.A.</option>
+                                <option value="Distribuidora Superior 300, C.A.">Distribuidora Superior 300, C.A.</option>
+                                <option value="Grupo Sonreir 123, C.A.">Grupo Sonreir 123, C.A.</option>
+                                <option value="Digilca, C.A.">Digilca, C.A.</option>
+                                <option value="Distribuidora Alemar, C.A.">Distribuidora Alemar, C.A.</option>
+                                <option value="Siglo XX Inversiones, C.A.">Siglo XX Inversiones, C.A.</option>
+                                <option value="Distribuidora Mev 2009, C.A">Distribuidora Mev 2009, C.A</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TINTORERIA Y LAVANDERIA -->
+                    <div class="space-y-3 bg-slate-800/90 p-3 rounded-2xl border border-slate-700/80 mb-4">
+                        <label for="mayoristasSelect" class="block font-heading font-bold text-sm text-red-300 flex items-center gap-2">
+                            <i class="fa-solid fa-shirt text-red-400 text-1xl mb-2"></i> Tintorerias & Lanvanderia:
+                        </label>
+                        <div class="relative">
+                            <select id="mayoristasSelect" class="w-full appearance-none bg-slate-900 border border-slate-600 text-slate-200 text-sm rounded-xl px-4 py-3.5 pr-10 focus:outline-none focus:ring-2 focus:ring-brand-red transition cursor-pointer">
+                                <option value="" disabled selected>Seleccione una Tintoreria o Lanvanderia...</option>
+                                <option value="Oriente Distribución, C.A.">Oriente Distribución, C.A.</option>
+                                <option value="Productos y Suministros PM, C.A">Productos y Suministros PM, C.A</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- COMERCIOS MINORISTAS -->
+                    <div class="space-y-3 bg-slate-800/90 p-3 rounded-2xl border border-slate-700/80 mb-4">
+                        <label for="mayoristasSelect" class="block font-heading font-bold text-sm text-red-300 flex items-center gap-2">
+                            <i class="fa-solid fa-store text-red-400 text-1xl mb-2"></i> Comercios Minoristas:
+                        </label>
+                        <div class="relative">
+                            <select id="mayoristasSelect" class="w-full appearance-none bg-slate-900 border border-slate-600 text-slate-200 text-sm rounded-xl px-4 py-3.5 pr-10 focus:outline-none focus:ring-2 focus:ring-brand-red transition cursor-pointer">
+                                <option value="" disabled selected>Seleccione un distribuidor Minorista...</option>
+                                <option value="Oriente Distribución, C.A.">Oriente Distribución, C.A.</option>
+                                <option value="Productos y Suministros PM, C.A">Productos y Suministros PM, C.A</option>
+                                <option value="Productos Milano, C.A.">Productos Milano, C.A.</option>
+                                <option value="Distribuidora Belher 100, C.A.">Distribuidora Belher 100, C.A.</option>
+                                <option value="Distribuidora Superior 300, C.A.">Distribuidora Superior 300, C.A.</option>
+                                <option value="Grupo Sonreir 123, C.A.">Grupo Sonreir 123, C.A.</option>
+                                <option value="Digilca, C.A.">Digilca, C.A.</option>
+                                <option value="Distribuidora Alemar, C.A.">Distribuidora Alemar, C.A.</option>
+                                <option value="Siglo XX Inversiones, C.A.">Siglo XX Inversiones, C.A.</option>
+                                <option value="Distribuidora Mev 2009, C.A">Distribuidora Mev 2009, C.A</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                <i class="fa-solid fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y CONTACTO CON MAPA INTERACTIVO -->
+<section id="contacto-mapa" class="py-16 sm:py-20 bg-slate-100 border-t border-slate-200 scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-red bg-red-50 px-3.5 py-1.5 rounded-full border border-red-200 shadow-sm inline-block">
+                Sede Principal y Canales
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-blue mt-3">
+                Ubicación y Contacto
+            </h2>
+            <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+                Visítanos en nuestra oficina corporativa en Caracas o en nuestra sede operativa en Villa de Cura. Haz clic en las direcciones para ubicarlas directamente en Google Maps.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- CONTENEDOR DEL MAPA INTERACTIVO -->
+            <div class="lg:col-span-7 bg-white p-3.5 sm:p-4 rounded-3xl border border-slate-200 shadow-xl flex flex-col h-[420px] lg:h-auto min-h-[420px]">
+                <div class="w-full h-full rounded-2xl overflow-hidden relative border border-slate-200 shadow-inner group">
+                    <iframe 
+                        id="mapa-iframe"
+                        title="Ubicación Grupo Serviquim" 
+                        src="https://maps.google.com/maps?q=Parque+Cristal,+Av.+Francisco+de+Miranda,+Caracas&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0 transition-opacity duration-300" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        sandbox="allow-scripts allow-same-origin allow-popups"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    
+                    <!-- Indicador visual flotante en el mapa -->
+                    <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-md border border-slate-200 text-xs font-semibold text-slate-700 flex items-center gap-2 pointer-events-none">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span id="mapa-label">Sede Corporativa (Caracas)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR DE TARJETAS DE INFORMACIÓN -->
+            <div class="lg:col-span-5 space-y-6 flex flex-col justify-between">
+                
+                <!-- SEDE CORPORATIVA -->
+                <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-brand-blue flex items-center gap-2.5">
+                            <i class="fa-solid fa-building text-brand-red"></i> Sede Corporativa
+                        </h3>
+                        <span class="text-[10px] font-bold uppercase bg-blue-50 text-brand-blue border border-blue-200 px-2.5 py-1 rounded-full">Caracas</span>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <!-- DIRECCIÓN CON ENLACES INTERACTIVOS A MAPS -->
+                        <div class="flex items-start gap-3.5 group">
+                            <div class="w-10 h-10 rounded-xl bg-red-50 group-hover:bg-brand-red group-hover:text-white text-brand-red flex items-center justify-center shrink-0 text-base font-bold transition-colors shadow-sm">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="flex-1">
+                                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Dirección Física:</span>
+                                <a 
+                                    href="https://www.google.com/maps/search/?api=1&query=Parque+Cristal+Av+Francisco+de+Miranda+Caracas" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onclick="actualizarMapa('https://maps.google.com/maps?q=Parque+Cristal,+Av.+Francisco+de+Miranda,+Caracas&t=&z=16&ie=UTF8&iwloc=&output=embed', 'Sede Corporativa (Caracas)')"
+                                    class="font-semibold text-slate-900 leading-snug hover:text-brand-red transition inline-flex items-center gap-1.5 mt-0.5 group/link"
+                                    title="Ver en Google Maps"
+                                >
+                                    <span>Av. Francisco de Miranda, Edif. Parque Cristal, Torre Este piso 7, Los Palos Grandes. Caracas, Venezuela.</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity shrink-0"></i>
+                                </a>
+                                
+                                <div class="mt-2 flex items-center gap-3">
+                                    <a 
+                                        href="https://www.google.com/maps/search/?api=1&query=Parque+Cristal+Av+Francisco+de+Miranda+Caracas" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-red hover:underline"
+                                    >
+                                        <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TELÉFONOS -->
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-base font-bold shadow-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Teléfonos Directos:</span>
+                                <div class="flex flex-wrap gap-2 mt-1.5">
+                                    <a href="tel:+582122854044" class="inline-flex items-center gap-1.5 font-bold text-brand-blue bg-slate-100 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-lg transition text-xs border border-slate-200">
+                                        <i class="fa-solid fa-square-phone text-xs"></i> 0212-285.40.44
+                                    </a>
+                                    <a href="tel:+582122851011" class="inline-flex items-center gap-1.5 font-bold text-brand-blue bg-slate-100 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-lg transition text-xs border border-slate-200">
+                                        <i class="fa-solid fa-square-phone text-xs"></i> 0212-285.10.11
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEDE OPERATIVA -->
+                <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-brand-blue flex items-center gap-2.5">
+                            <i class="fa-solid fa-industry text-brand-red"></i> Sede Operativa
+                        </h3>
+                        <span class="text-[10px] font-bold uppercase bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-1 rounded-full">Aragua</span>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <!-- DIRECCIÓN CON ENLACES INTERACTIVOS A MAPS -->
+                        <div class="flex items-start gap-3.5 group">
+                            <div class="w-10 h-10 rounded-xl bg-red-50 group-hover:bg-brand-red group-hover:text-white text-brand-red flex items-center justify-center shrink-0 text-base font-bold transition-colors shadow-sm">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="flex-1">
+                                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Dirección Física:</span>
+                                <a 
+                                    href="https://www.google.com/maps/search/?api=1&query=Carretera+San+Francisco+de+Asis+Villa+De+Cura+Aragua+Venezuela" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onclick="actualizarMapa('https://maps.google.com/maps?q=Carretera+San+Francisco+de+Asis,+Villa+De+Cura,+Aragua&t=&z=15&ie=UTF8&iwloc=&output=embed', 'Sede Operativa (Villa de Cura)')"
+                                    class="font-semibold text-slate-900 leading-snug hover:text-brand-red transition inline-flex items-center gap-1.5 mt-0.5 group/link"
+                                    title="Ver en Google Maps"
+                                >
+                                    <span>Carretera San Francisco de Asís, Galpón Serviquim, Villa De Cura, Edo. Aragua.</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brand-red opacity-0 group-hover/link:opacity-100 transition-opacity shrink-0"></i>
+                                </a>
+
+                                <div class="mt-2 flex items-center gap-3">
+                                    <a 
+                                        href="https://www.google.com/maps/search/?api=1&query=Carretera+San+Francisco+de+Asis+Villa+De+Cura+Aragua+Venezuela" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-red hover:underline"
+                                    >
+                                        <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TELÉFONOS -->
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0 text-base font-bold shadow-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Teléfonos Directos:</span>
+                                <div class="flex flex-wrap gap-2 mt-1.5">
+                                    <a href="tel:+582443889203" class="inline-flex items-center gap-1.5 font-bold text-brand-blue bg-slate-100 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-lg transition text-xs border border-slate-200">
+                                        <i class="fa-solid fa-square-phone text-xs"></i> 0244-338.92.03
+                                    </a>
+                                    <a href="tel:+582443389153" class="inline-flex items-center gap-1.5 font-bold text-brand-blue bg-slate-100 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-lg transition text-xs border border-slate-200">
+                                        <i class="fa-solid fa-square-phone text-xs"></i> 0244-338.91.53
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ATENCIÓN POR CORREO -->
+                <div class="bg-gradient-to-br from-brand-blue to-brand-navy text-white rounded-3xl p-6 sm:p-7 shadow-xl space-y-4">
+                    <h4 class="font-heading font-extrabold text-lg sm:text-xl flex items-center gap-2.5 text-red-400">
+                        <i class="fa-solid fa-envelope-open-text"></i> Atención por Correo Electrónico
+                    </h4>
+
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <a href="mailto:mercadeo@serviquim.com" class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-sm flex items-center gap-3 transition group">
+                            <i class="fa-solid fa-at text-red-400 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] uppercase text-slate-300 block font-semibold truncate">Información & Ventas</span>
+                                <span class="font-mono text-xs sm:text-sm font-bold text-white group-hover:text-red-300 transition truncate block">
+                                    mercadeo@serviquim.com
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:rrhh@serviquim.com" class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-sm flex items-center gap-3 transition group">
+                            <i class="fa-solid fa-user-gear text-blue-300 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] uppercase text-slate-300 block font-semibold truncate">RRHH / Empleos</span>
+                                <span class="font-mono text-xs sm:text-sm font-bold text-white group-hover:text-blue-300 transition truncate block">
+                                    rrhh@serviquim.com
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+   <div class="bg-gradient-to-r from-brand-blue via-brand-red to-brand-navy py-12 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <h3 class="font-heading font-extrabold text-2xl sm:text-3xl">Conéctate en Redes Sociales</h3>
+                <p class="text-sm text-slate-200 mt-1">Síguenos para mantenerte actualizado con noticias, vacantes y novedades de nuestras marcas.</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+                <a href="https://instagram.com/serviquimca" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white text-xl transition transform hover:scale-110 shadow-lg" title="Instagram @serviquim">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/@serviquim" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white text-xl transition transform hover:scale-110 shadow-lg" title="TikTok @serviquim">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://linkedin.com/company/serviquim" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white text-xl transition transform hover:scale-110 shadow-lg" title="LinkedIn Serviquim">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-950 text-slate-400 text-sm py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+            <p>&copy; 2026 Grupo Serviquim, C.A. Todos los derechos reservados.</p>
+            <p class="text-xs text-slate-500">Formulaciones Químicas e Higiene del Hogar con Estándares Internacionales.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end group">
+        <!-- Tooltip / Globe Informativo -->
+        <div class="mb-2 hidden sm:flex items-center gap-2 bg-slate-900 text-white text-xs py-1.5 px-3 rounded-full shadow-lg border border-slate-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>¿En qué podemos ayudarte? <strong>¡Contáctanos!</strong></span>
+        </div>
+        
+        <!-- Enlace Directo a WhatsApp -->
+        <a href="https://wa.me/584120000000?text=Hola,%20quisiera%20recibir%20información%20sobre%20sus%20servicios%20y%20productos." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Contactar por WhatsApp"
+           class="relative flex items-center justify-center w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group focus:outline-none focus:ring-4 focus:ring-emerald-300">
+            
+            <!-- Efecto Onda de Pulso -->
+            <span class="absolute -inset-1 rounded-full bg-emerald-500 opacity-40 animate-ping pointer-events-none"></span>
+
+            <!-- Icono de WhatsApp (SVG) -->
+            <svg class="w-8 h-8 fill-current relative z-10" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.842-1.001z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts de Interacción -->
+    <script>
+    /**
+     * Función que actualiza la vista del mapa incrustado cuando el usuario hace clic 
+     * en una de las direcciones antes de abrir la pestaña nueva de Google Maps.
+     */
+    function actualizarMapa(urlEmbed, label) {
+        const iframe = document.getElementById('mapa-iframe');
+        const mapaLabel = document.getElementById('mapa-label');
+        
+        if (iframe) {
+            iframe.style.opacity = '0.4';
+            setTimeout(() => {
+                iframe.src = urlEmbed;
+                iframe.style.opacity = '1';
+            }, 200);
+        }
+        
+        if (mapaLabel) {
+            mapaLabel.textContent = label;
+        }
+    }
+</script>
+    <script>
+        // Switch Active Product Panel
+        function selectProduct(productKey) {
+            // Hide all detail panels
+            document.querySelectorAll('.product-detail-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+
+            // Reset all card styles
+            document.querySelectorAll('.product-card-selector').forEach(card => {
+                card.classList.remove('border-red-500', 'bg-slate-900/90', 'shadow-glow-card');
+                card.classList.add('border-slate-800/80', 'bg-slate-900/60');
+                
+                // Reset arrow button state inside cards
+                const btnIcon = card.querySelector('.fa-chevron-right')?.parentElement;
+                if(btnIcon) {
+                    btnIcon.className = 'w-8 h-8 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-red-500 group-hover:border-red-400 group-hover:text-white transition';
+                }
+            });
+
+            // Show selected detail panel
+            const targetPanel = document.getElementById('detail-' + productKey);
+            if (targetPanel) {
+                targetPanel.classList.remove('hidden');
+            }
+
+            // Highlight selected product card
+            const targetCard = document.getElementById('selector-' + productKey);
+            if (targetCard) {
+                targetCard.classList.remove('border-slate-800/80', 'bg-slate-900/60');
+                targetCard.classList.add('border-red-500', 'bg-slate-900/90', 'shadow-glow-card');
+
+                const activeBtnIcon = targetCard.querySelector('.fa-chevron-right')?.parentElement;
+                if(activeBtnIcon) {
+                    activeBtnIcon.className = 'w-8 h-8 rounded-xl bg-red-500 text-white border border-red-400 flex items-center justify-center transition';
+                }
+            }
+
+            // Update status tag
+            const statusTag = document.getElementById('active-product-tag');
+            if(statusTag) {
+                statusTag.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> ${productKey === 'blancloro' ? 'Cloro Blancloro' : 'Limpia Pocetas Ciclón'}`;
+            }
+        }
+
+        // Handle Dropdown Change for Blancloro
+        function onBlancloroDropdownChange(selectedValue) {
+            const [fragranceName, imgSrc] = selectedValue.split('|');
+            selectProduct('blancloro');
+
+            // Sync both dropdowns safely with null-checks
+            const listDropdown = document.getElementById('dropdown-blancloro-list');
+            if (listDropdown) listDropdown.value = selectedValue;
+
+            const detailDropdown = document.getElementById('dropdown-blancloro-detail');
+            if (detailDropdown) detailDropdown.value = selectedValue;
+
+            // Change image smoothly
+            const imgElement = document.getElementById('product-blancloro-img');
+            if (imgElement) {
+                imgElement.style.opacity = '0.2';
+                imgElement.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    imgElement.src = imgSrc;
+                    imgElement.style.opacity = '1';
+                    imgElement.style.transform = 'scale(1)';
+                }, 200);
+            }
+
+            // Update thumbnail image
+            const thumbImg = document.getElementById('thumb-blancloro-img');
+            if(thumbImg) {
+                thumbImg.src = imgSrc;
+            }
+
+            // Badge text
+            const badge = document.getElementById('blancloro-badge');
+            if (badge) {
+                badge.innerText = 'Blancloro - ' + fragranceName;
+            }
+        }
+
+        // Handle Dropdown Change for Ciclón
+        function onCiclonDropdownChange(selectedValue) {
+            selectProduct('ciclon');
+
+            const listDropdown = document.getElementById('dropdown-ciclon-list');
+            if (listDropdown) listDropdown.value = selectedValue;
+
+            const detailDropdown = document.getElementById('dropdown-ciclon-detail');
+            if (detailDropdown) detailDropdown.value = selectedValue;
+        }
+
+        // Fragrance Selector for Blancloro (from buttons)
+        function changeBlancloroFragrance(imgSrc, fragranceName, btnElement) {
+            const selectedVal = fragranceName + '|' + imgSrc;
+            onBlancloroDropdownChange(selectedVal);
+        }
+
+        // Modal triggers
+        function openConsultModal(productName) {
+            const modal = document.getElementById('consult-modal');
+            const modalBox = document.getElementById('modal-box');
+            const modalText = document.getElementById('modal-text');
+            
+            modalText.innerHTML = `Está a punto de consultar disponibilidad con un asesor de ventas para: <strong class="text-white">${productName}</strong>.`;
+            
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+            modalBox.classList.remove('scale-95');
+            modalBox.classList.add('scale-100');
+        }
+
+        function closeConsultModal() {
+            const modal = document.getElementById('consult-modal');
+            const modalBox = document.getElementById('modal-box');
+            
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalBox.classList.remove('scale-100');
+            modalBox.classList.add('scale-95');
+        }
+    </script>
+
+
+    <!-- LÓGICA E INTERACTIVIDAD JS DE LA PÁGINA Y LÍNEA DEL TIEMPO -->
+    <script>
+        const historyData = [
+            {
+                year: 'Noviembre 1969',
+                bigYear: '1969',
+                title: 'Inicio de Actividades Químicas',
+                desc: 'Comenzamos operaciones con la fabricación y venta de auxiliares químicos para la industria, especializándonos en detergentes enzimáticos e innovaciones para procesos industriales.',
+                icon: 'fa-solid fa-flag',
+                colorClass: 'border-brand-red',
+                bgBadge: 'bg-brand-red',
+                tags: ['Auxiliares Químicos', 'Detergentes Enzimáticos', 'Lanzamiento Industrial']
+            },
+            {
+                year: 'Año 1971',
+                bigYear: '1971',
+                title: 'Producción de Materias Primas',
+                desc: 'Iniciamos la producción de una serie de materias primas clave en nuestras propias plantas, obteniendo importantes ventajas competitivas y autonomía técnica.',
+                icon: 'fa-solid fa-flask',
+                colorClass: 'border-blue-500',
+                bgBadge: 'bg-blue-600',
+                tags: ['Materias Primas', 'Síntesis Química', 'Autonomía Industrial']
+            },
+            {
+                year: 'Año 1974',
+                bigYear: '1974',
+                title: 'División de Consumo Masivo',
+                desc: 'Creación de la División de Consumo Masivo con el lanzamiento estrella del lavaplatos líquido PRIMOR, marcando el ingreso a los hogares venezolanos.',
+                icon: 'fa-solid fa-soap',
+                colorClass: 'border-amber-500',
+                bgBadge: 'bg-amber-600',
+                tags: ['Consumo Masivo', 'Lavaplatos Primor', 'Cuidado del Hogar']
+            },
+            {
+                year: 'Año 1983',
+                bigYear: '1983',
+                title: 'Lanzamiento de BLANCLORO',
+                desc: 'Se lanza al mercado nacional BLANCLORO con una extraordinaria receptividad comercial por su innovadora formulación con pH controlado que protege las telas.',
+                icon: 'fa-solid fa-shield-halved',
+                colorClass: 'border-emerald-500',
+                bgBadge: 'bg-emerald-600',
+                tags: ['Blancloro', 'pH Controlado', 'Líder en Blanqueo']
+            },
+            {
+                year: '1988 - Actualidad',
+                bigYear: 'Hoy',
+                title: 'Red Nacional & Liderazgo',
+                desc: 'Consolidación de la Fuerza de Ventas regional directa para posicionar a la empresa entre las principales marcas químicas de consumo en todo el territorio nacional.',
+                icon: 'fa-solid fa-chart-line',
+                colorClass: 'border-purple-500',
+                bgBadge: 'bg-purple-600',
+                tags: ['Cobertura Nacional', 'Fuerza de Ventas', 'Liderazgo en Mercado']
+            }
+        ];
+
+        function selectTimelineItem(index) {
+            const data = historyData[index];
+            if (!data) return;
+
+            // Actualizar tarjeta visor del Hero
+            const badge = document.getElementById('timeline-hero-badge');
+            const title = document.getElementById('timeline-hero-title');
+            const desc = document.getElementById('timeline-hero-desc');
+            const tags = document.getElementById('timeline-hero-tags');
+            const icon = document.getElementById('timeline-hero-icon');
+            const bgIcon = document.getElementById('timeline-hero-icon-bg');
+            const yearBig = document.getElementById('timeline-hero-year-big');
+            const iconBox = document.getElementById('timeline-hero-icon-box');
+
+            if (badge) {
+                badge.textContent = data.year;
+                badge.className = `font-mono text-xs sm:text-sm font-extrabold text-white ${data.bgBadge} px-4 py-1.5 rounded-full shadow-lg border border-white/20`;
+            }
+            if (title) title.textContent = data.title;
+            if (desc) desc.textContent = data.desc;
+            if (yearBig) yearBig.textContent = data.bigYear;
+
+            if (icon) icon.className = `${data.icon}`;
+            if (bgIcon) bgIcon.className = `${data.icon} text-[16rem]`;
+
+            if (tags) {
+                tags.innerHTML = data.tags.map(t => `
+                    <span class="text-[11px] font-semibold bg-slate-800 text-slate-300 px-3 py-1 rounded-lg border border-slate-700">${t}</span>
+                `).join('');
+            }
+
+            // Actualizar estilo visual activo de botones
+            historyData.forEach((_, idx) => {
+                const btn = document.getElementById(`timeline-btn-${idx}`);
+                if (!btn) return;
+                
+                if (idx === index) {
+                    btn.className = `history-card text-left p-5 rounded-3xl bg-slate-900/90 border-2 ${data.colorClass} text-white shadow-xl transition-all duration-300 relative group cursor-pointer focus:outline-none scale-105`;
+                } else {
+                    btn.className = `history-card text-left p-5 rounded-3xl bg-slate-900/90 border border-slate-700/80 text-slate-300 shadow-lg hover:border-slate-500 transition-all duration-300 relative group cursor-pointer focus:outline-none opacity-80 hover:opacity-100`;
+                }
+            });
+        }
+
+        const salesTeam = [
+            {
+                id: 'caracas',
+                region: 'Caracas (Sede Principal)',
+                shortRegion: 'Caracas',
+                name: 'Abelardo Novoa',
+                title: 'Asesor Comercial - Caracas',
+                desc: 'Asesoramiento directo a distribuidores, farmacias, comercios y cadenas en el área metropolitana de Caracas.',
+                phone: '+58 (414) 125-3033',
+                whatsapp: '584141253033',
+                initial: 'AN'
+            },
+            {
+                id: 'andes-zulia',
+                region: 'Los Andes, Zulia & Portuguesa',
+                shortRegion: 'Los Andes / Zulia',
+                name: 'Pablo Rangel',
+                title: 'Gerente Zonal - Los Andes, Zulia, Portuguesa',
+                desc: 'Coordinación comercial, logística y despacho especializado en los estados andinos, Zulia y Portuguesa.',
+                phone: '+58 (414) 701-7103',
+                whatsapp: '584147017103',
+                initial: 'PR'
+            },
+            {
+                id: 'oriente',
+                region: 'Región Oriental (Oriente)',
+                shortRegion: 'Oriente',
+                name: 'Pablo Rodríguez',
+                title: 'Gerente de Ventas - Región Oriental',
+                desc: 'Atención a canales de distribución mayorista, supermercados y comercios en todo el oriente del país.',
+                phone: '+58 (416) 680-7196',
+                whatsapp: '584166807196',
+                initial: 'PR'
+            },
+            {
+                id: 'miranda-centro',
+                region: 'Miranda, Aragua, Guárico & Carabobo',
+                shortRegion: 'Miranda / Aragua / Centro',
+                name: 'José Heredia',
+                title: 'Ejecutivo Comercial - Centro y Miranda',
+                desc: 'Suministro y atención de pedidos comerciales en Miranda, Calabozo, Aragua, Valencia y Guárico.',
+                phone: '+58 (424) 219-3855',
+                whatsapp: '584242193855',
+                initial: 'JH'
+            },
+            {
+                id: 'lara-yaracuy',
+                region: 'Lara & Yaracuy',
+                shortRegion: 'Lara / Yaracuy',
+                name: 'Fabio Pereira',
+                title: 'Asesor Comercial - Lara y Yaracuy',
+                desc: 'Gestión de clientes, atención comercial y abastecimiento de productos en los estados Lara y Yaracuy.',
+                phone: '+58 (426) 550-3645',
+                whatsapp: '584265503645',
+                initial: 'FP'
+            },
+            {
+                id: 'bolivar',
+                region: 'Estado Bolívar',
+                shortRegion: 'Bolívar',
+                name: 'Luis Venegas',
+                title: 'Asesor Comercial - Estado Bolívar',
+                desc: 'Logística, distribución oportuna y atención a comercios e industrias en el estado Bolívar.',
+                phone: '+58 (414) 897-4274',
+                whatsapp: '584148974274',
+                initial: 'LV'
+            }
+        ];
+
+        function sanitizeText(str) {
+            const temp = document.createElement('div');
+            temp.textContent = str;
+            return temp.innerHTML;
+        }
+
+        function initSalesTeam() {
+            const listContainer = document.getElementById('interactive-region-list');
+            if (!listContainer) return;
+
+            listContainer.innerHTML = '';
+
+            salesTeam.forEach((seller, index) => {
+                const isActive = index === 0;
+
+                const itemBtn = document.createElement('button');
+                itemBtn.type = 'button';
+                itemBtn.id = `region-card-${seller.id}`;
+                itemBtn.className = `w-full text-left p-4 rounded-2xl border transition-all duration-200 flex items-center justify-between group ${
+                    isActive 
+                        ? 'bg-gradient-to-r from-brand-red to-brand-darkred text-white border-red-500 shadow-lg shadow-red-600/30' 
+                        : 'bg-slate-900/90 text-slate-300 border-slate-700/80 hover:bg-slate-800 hover:border-slate-600 hover:text-white'
+                }`;
+
+                itemBtn.innerHTML = `
+                    <div class="flex items-center space-x-3.5">
+                        <div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shrink-0 ${isActive ? 'bg-white/20 text-white' : 'bg-slate-800 text-red-400 border border-slate-700'}">
+                            ${sanitizeText(seller.initial)}
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider ${isActive ? 'text-red-200' : 'text-slate-400 group-hover:text-red-400'} transition-colors">${sanitizeText(seller.shortRegion)}</span>
+                            <h4 class="font-heading font-bold text-sm sm:text-base text-white mt-0.5">${sanitizeText(seller.name)}</h4>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center ${isActive ? 'bg-white/20 text-white' : 'bg-slate-800 text-slate-400 group-hover:bg-brand-red group-hover:text-white'} transition-all">
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                `;
+
+                itemBtn.onclick = () => selectSellerInteractive(seller.id);
+                listContainer.appendChild(itemBtn);
+            });
+
+            selectSellerInteractive(salesTeam[0].id);
+        }
+
+        function selectSellerInteractive(id) {
+            const seller = salesTeam.find(s => s.id === id);
+            if (!seller) return;
+
+            salesTeam.forEach(s => {
+                const btn = document.getElementById(`region-card-${s.id}`);
+                if (!btn) return;
+                
+                const iconContainer = btn.querySelector('.w-10');
+                const tagEl = btn.querySelector('span');
+                const arrowContainer = btn.querySelector('.w-8');
+
+                if (s.id === id) {
+                    btn.className = 'w-full text-left p-4 rounded-2xl border transition-all duration-200 flex items-center justify-between group bg-gradient-to-r from-brand-red to-brand-darkred text-white border-red-500 shadow-lg shadow-red-600/30';
+                    if (iconContainer) iconContainer.className = 'w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shrink-0 bg-white/20 text-white';
+                    if (tagEl) tagEl.className = 'text-xs font-bold uppercase tracking-wider text-red-200 transition-colors';
+                    if (arrowContainer) arrowContainer.className = 'w-8 h-8 rounded-full flex items-center justify-center bg-white/20 text-white transition-all';
+                } else {
+                    btn.className = 'w-full text-left p-4 rounded-2xl border transition-all duration-200 flex items-center justify-between group bg-slate-900/90 text-slate-300 border-slate-700/80 hover:bg-slate-800 hover:border-slate-600 hover:text-white';
+                    if (iconContainer) iconContainer.className = 'w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shrink-0 bg-slate-800 text-red-400 border border-slate-700';
+                    if (tagEl) tagEl.className = 'text-xs font-bold uppercase tracking-wider text-slate-400 group-hover:text-red-400 transition-colors';
+                    if (arrowContainer) arrowContainer.className = 'w-8 h-8 rounded-full flex items-center justify-center bg-slate-800 text-slate-400 group-hover:bg-brand-red group-hover:text-white transition-all';
+                }
+            });
+
+            const elInitials = document.getElementById('active-seller-initials');
+            const elRegion = document.getElementById('active-seller-region');
+            const elName = document.getElementById('active-seller-name');
+            const elTitle = document.getElementById('active-seller-title');
+            const elDesc = document.getElementById('active-seller-desc');
+            const elPhoneBtn = document.getElementById('active-seller-phone-btn');
+            const elPhoneText = document.getElementById('active-seller-phone-text');
+            const elWaBtn = document.getElementById('active-seller-whatsapp-btn');
+
+            if (elInitials) elInitials.textContent = seller.initial;
+            if (elRegion) elRegion.textContent = seller.region;
+            if (elName) elName.textContent = seller.name;
+            if (elTitle) elTitle.textContent = seller.title;
+            if (elDesc) elDesc.textContent = seller.desc;
+            
+            const sanitizedPhone = seller.phone.replace(/[^0-9+]/g, '');
+            if (elPhoneBtn) elPhoneBtn.href = `tel:${encodeURIComponent(sanitizedPhone)}`;
+            if (elPhoneText) elPhoneText.textContent = seller.phone;
+            
+            const waMessage = `Hola ${seller.name}, necesito asesoría comercial y cotización de productos Serviquim para la región ${seller.region}.`;
+            const sanitizedWhatsapp = seller.whatsapp.replace(/[^0-9]/g, '');
+            if (elWaBtn) elWaBtn.href = `https://wa.me/${encodeURIComponent(sanitizedWhatsapp)}?text=${encodeURIComponent(waMessage)}`;
+        }
+
+        const globalMobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const globalMobileMenu = document.getElementById('mobileMenu');
+        const globalMenuIcon = document.getElementById('menuIcon');
+
+        if (globalMobileMenuBtn && globalMobileMenu) {
+            globalMobileMenuBtn.onclick = () => {
+                globalMobileMenu.classList.toggle('hidden');
+                if (globalMobileMenu.classList.contains('hidden')) {
+                    if (globalMenuIcon) globalMenuIcon.className = 'fa-solid fa-bars text-2xl';
+                } else {
+                    if (globalMenuIcon) globalMenuIcon.className = 'fa-solid fa-xmark text-2xl';
+                }
+            };
+
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.onclick = () => {
+                    globalMobileMenu.classList.add('hidden');
+                    if (globalMenuIcon) globalMenuIcon.className = 'fa-solid fa-bars text-2xl';
+                };
+            });
+        }
+
+        function changeBlancloroFragrance(imgUrl, name, btnElement) {
+            const mainImg = document.getElementById('product-blancloro-img');
+            const badge = document.getElementById('blancloro-badge');
+            
+            if (mainImg && (imgUrl.startsWith('https://') || imgUrl.startsWith('http://'))) {
+                mainImg.classList.add('opacity-0');
+                setTimeout(() => {
+                    mainImg.src = imgUrl;
+                    mainImg.classList.remove('opacity-0');
+                }, 150);
+            }
+
+            if (badge) {
+                badge.textContent = `Blancloro - ${name}`;
+            }
+
+            document.querySelectorAll('.fragrance-btn').forEach(btn => {
+                btn.classList.remove('border-2', 'border-brand-red');
+                btn.classList.add('border', 'border-slate-700');
+            });
+
+            if (btnElement) {
+                btnElement.classList.remove('border-slate-700');
+                btnElement.classList.add('border-2', 'border-brand-red');
+            }
+        }
+
+        function switchPhilosophyTab(tabName) {
+            const tabs = ['mision', 'vision', 'calidad'];
+            
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tab-btn-${t}`);
+                const content = document.getElementById(`tab-content-${t}`);
+                
+                if (t === tabName) {
+                    if (btn) {
+                        btn.className = 'philosophy-tab-btn px-5 sm:px-8 py-3 rounded-xl font-heading font-extrabold text-sm transition-all duration-300 flex items-center gap-2.5 bg-gradient-to-r from-brand-red to-brand-darkred text-white shadow-lg shadow-red-600/30';
+                    }
+                    if (content) {
+                        content.classList.remove('hidden');
+                    }
+                } else {
+                    if (btn) {
+                        btn.className = 'philosophy-tab-btn px-5 sm:px-8 py-3 rounded-xl font-heading font-extrabold text-sm transition-all duration-300 flex items-center gap-2.5 text-slate-300 hover:text-white hover:bg-slate-700/50';
+                    }
+                    if (content) {
+                        content.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        window.onload = function() {
+            initSalesTeam();
+            selectTimelineItem(0);
+        };
+    </script>
+</body>
+</html>
